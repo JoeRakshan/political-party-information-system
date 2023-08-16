@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Picture Link Example</title>
+	<style>
+		/* CSS styling */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f1f1f1;
+		}
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		
+		.picture-link {
+			display: block;
+			width: 300px;
+			height: 200px;
+			background-image: url("your-image-url.jpg");
+			background-size: cover;
+			background-position: center;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+			transition: transform 0.3s ease;
+		}
+		
+		.picture-link:hover {
+			transform: scale(1.05);
+			cursor: pointer;
+			box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+		}
+		
+		.picture-link-text {
+			margin-top: 10px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #333;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+		
+		.picture-link-text:hover {
+			color: #666;
+		}
+input{
+position:absolute;
+bottom: 0;
+right: 0;
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<a href="your-link-url.html" class="picture-link">
+			<span class="picture-link-text">Click here to go to the next page</span>
+		</a>
+	</div>
+	<form method = "post" action = "http:/localhost/web project/project.php">
+<input type="submit" name="submit" value="Display"> 
+</form>
+</body>
+</html>
